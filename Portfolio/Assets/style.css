@@ -67,6 +67,13 @@ nav a:hover::before {
   width: 400px;
 }
 
+.TokyoPic{
+    width: 500px;
+     height: 800px;
+}
+
+
+
 img {
   width: 200px;
   height: 400px;
