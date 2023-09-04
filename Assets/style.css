@@ -61,6 +61,27 @@ nav a::before {
 nav a:hover::before {
   width: 70%;
 }
+.aboutme{
+  padding: 0px 5px;
+  color: #f0f7ee;
+  font: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: -2px;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.history{
+  margin: 0px;
+  padding: 0px;
+  font-family: fantasy;
+  color: #2F2F2F;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: larger;
+
+}
 
 .mylife {
   position: relative;
@@ -68,8 +89,10 @@ nav a:hover::before {
 }
 
 .TokyoPic{
-    width: 500px;
-     height: 800px;
+  padding: 30px 100px;
+  width: 500px;
+  height: 800px;
+    
 }
 
 
@@ -118,7 +141,7 @@ h2 {
   width: 100%;
 }
 
-h2 span {
+.space {
   color: #f0f7ee;
   font: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -126,7 +149,6 @@ h2 span {
   letter-spacing: -2px;
   background: #000000;
   background: rgba(0, 0, 0, 0.7);
-}
-h2 span.space {
   padding: 0 5px;
 }
+
