@@ -1,8 +1,7 @@
 body {
   margin: 0;
   background: #feffea;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: fantasy;
   font-weight: 500%;
 }
 h1 {
@@ -65,8 +64,7 @@ nav a:hover::before {
   padding: 0px 5px;
   color: #f0f7ee;
   font: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: fantasy;
   letter-spacing: -2px;
   background: #000000;
   background: rgba(0, 0, 0, 0.7);
@@ -108,7 +106,7 @@ img {
 }
 .description {
   position: absolute;
-  top: 52px;
+  top: 69px;
   left: 0;
   width: 200%;
   height: 398px;
@@ -144,11 +142,28 @@ h2 {
 .space {
   color: #f0f7ee;
   font: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: fantasy;
   letter-spacing: -2px;
   background: #000000;
   background: rgba(0, 0, 0, 0.7);
   padding: 0 5px;
 }
+
+h3{
+  
+}
+
+img[alt="My Work"]{
+display: flex;
+flex-direction: row;
+padding-top:1px;
+border: 5px solid #000000;
+}
+
+p{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 
