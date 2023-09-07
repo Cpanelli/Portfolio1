@@ -2,7 +2,7 @@ body {
   margin: 0;
   background: #feffea;
   font-family: fantasy;
-  font-weight: 500%;
+  
 }
 h1 {
   color: #f0f7ee;
@@ -61,22 +61,21 @@ nav a:hover::before {
   width: 70%;
 }
 .aboutme {
-  padding: 0px 5px;
+  padding: 0px 9px;
   color: #f0f7ee;
   font: bold;
   font-family: fantasy;
-  letter-spacing: -2px;
-  background: #000000;
+  letter-spacing: 2px;
   background: rgba(0, 0, 0, 0.7);
 }
 
 #Contact {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
   border-bottom: #000000 5px solid;
-  border-width: 100%;
+  border-width: 2px;
+  
   padding-top: 25px;
 }
 
@@ -106,7 +105,6 @@ div {
   margin: 0px;
   padding: 0px;
   padding-left: 20px;
-  line-height: 2%;
   font-family: fantasy;
   color: #2f2f2f;
   line-height: 1.8;
@@ -124,8 +122,10 @@ div {
   padding: 30px 100px;
   width: 500px;
   height: 800px;
+  background-color:rgb(255, 210, 90, 0.2 );
+  
+  
 }
-
 img {
   width: 200px;
   height: 400px;
@@ -140,7 +140,7 @@ img {
   top: 105px;
   left: 1;
   width: 185%;
-  height: 398px;
+  height: 397px;
   background: rgba(0, 0, 0, 0.6);
   color: #f0f7ee;
   font-family: fantasy;
@@ -181,14 +181,11 @@ h2 {
   text-align: center;
 }
 
-.mypro {
-  cursor: pointer;
-  color: #000000;
+.Resume{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style-type: none;
-  padding-top: 25px;
+  justify-content: center;
+  font-size: 300%;
+  padding-top: -20%;
 }
 
 .mypro:active {
@@ -199,14 +196,7 @@ h2 {
   color: #503047;
 }
 
-img[alt="My Work"] {
-  clip-path: circle(65%);
-  width: 100px;
-  height: 500px;
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-}
+
 
 p {
   display: flex;
@@ -214,10 +204,8 @@ p {
 }
 
 .box {
-  border: #000000 solid 5px;
-  border-style: double;
-  padding: 5px;
-  font-size: x-large;
+  
+  font-size: large;
 }
 .free {
   color: #000000;
@@ -227,18 +215,49 @@ p {
   list-style-type: none;
   padding-top: 25px;
 }
-.explain {
-  font-weight: 200px;
-  font-size: x-large;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
+
+
+h2 .Resume {
+  font-size: 50px;
+  word-break: break-all;
 }
-.Resume {
-  display: flex;
-  justify-content: center;
-  font-size: 300%;
+
+.main{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.all{
+  margin: 8px -16px;
+  padding: 0 6px;
+  float: left;
+  width: 100%;
+}
+.all, .all > .column{
+  padding: 8px;
+}
+.column{
+  float: left;
+  width: 30%;
+  padding: 5px;
+  
+}
+.all::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.create{
+  border: 1px solid #000000;
+  padding: 5px;
+}
+.create:hover{
+  border: 10px solid #777;
+}
+
+.explain{
+  padding: 15px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -246,10 +265,23 @@ p {
     text-align: center;
   }
   nav {
-    float: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     text-align: center;
+    
   }
+  .all{
+    width: 80%;
+    margin: px 0;
+    display: flex;
+  }
+.mylife{
+display: none;
+}
 
+  
   nav li {
     display: block;
     margin-left: 0;
@@ -260,9 +292,41 @@ p {
     flex-direction: column;
     text-align: center;
   }
+  .TokyoPic{
+    width: 70%;
+  }
+  .create{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-@media screen and (min-width: 800px) {
+}
+
+@media screen and (max-width: 500px){
+  .all{
+    width: 100%;
+   flex-direction: column;
+   flex-grow: 1;
+   font-size: 2%;
+   padding-left: 30px;
+  }
+  .create{
+    border: 1px solid #000000;
+    width: 100px;
+  }
+   
+  .mylife{
+    display: none;
+  }
+
+  }
+
+
+@media screen and (min-width: 769px) {
   header {
     padding: 20px 0;
   }
@@ -274,22 +338,13 @@ p {
     font-size: 20px;
   }
 
-  .history {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .history div {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .history p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
   #Contact {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
-}
+ }
+
+
+
+
+
