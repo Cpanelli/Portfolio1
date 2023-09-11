@@ -1,11 +1,16 @@
+:root{
+  --white_gray: #f0f7ee;
+  --black: #000000;
+}
+
 body {
   margin: 0;
-  background: #feffea;
+  background: var(--white_gray);
   font-family: fantasy;
   
 }
 h1 {
-  color: #f0f7ee;
+  color: var(--white_gray);
   float: left;
 }
 
@@ -36,7 +41,7 @@ nav li {
   position: relative;
 }
 nav a {
-  color: #f0f7ee;
+  color: var(--white_gray);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
@@ -62,7 +67,7 @@ nav a:hover::before {
 }
 .aboutme {
   padding: 0px 9px;
-  color: #f0f7ee;
+  color: var(--white_gray);
   font: bold;
   font-family: fantasy;
   letter-spacing: 2px;
@@ -81,7 +86,7 @@ nav a:hover::before {
 
 .mylinks {
   cursor: pointer;
-  color: #000000;
+  color: var(--black);
 }
 
 .mylinks:hover {
@@ -142,7 +147,7 @@ img {
   width: 185%;
   height: 397px;
   background: rgba(0, 0, 0, 0.6);
-  color: #f0f7ee;
+  color: var(--white_gray);
   font-family: fantasy;
   display: flex;
   flex-direction: column;
@@ -171,7 +176,7 @@ h2 {
 }
 
 .space {
-  color: #f0f7ee;
+  color: var(--white_gray);
   font: bold;
   font-family: fantasy;
   letter-spacing: -2px;
@@ -208,7 +213,7 @@ p {
   font-size: large;
 }
 .free {
-  color: #000000;
+  color: var(--black);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -248,7 +253,7 @@ h2 .Resume {
   clear: both;
 }
 .create{
-  border: 1px solid #000000;
+  border: 1px solid var(--black);
   padding: 5px;
 }
 .create:hover{
@@ -260,28 +265,52 @@ h2 .Resume {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+/* CSS for screens larger than 768px (standard desktop) */
+@media screen and (min-width: 769px) {
+  header {
+    padding: 20px 0;
+  }
+
+  nav li {
+    margin-left: 30px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  #Contact {
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+/* CSS for screens between 501px and 768px (tablets and larger mobile devices) */
+@media screen and (min-width: 501px) and (max-width: 768px) {
   header {
     text-align: center;
   }
+
   nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center; /* Center the navigation links */
     text-align: center;
-    
   }
-  .all{
-    width: 80%;
-    margin: px 0;
-    display: flex;
-  }
-.mylife{
-display: none;
-}
 
-  
+  .all {
+    width: 80%;
+    margin: 0 auto; /* Center the project columns */
+    display: flex;
+    flex-wrap: wrap; /* Allow the projects to wrap on smaller screens */
+    justify-content: center; /* Center the projects horizontally */
+  }
+
+  .mylife {
+    display: none; /* Hide the "mylife" sections on smaller screens */
+  }
+
   nav li {
     display: block;
     margin-left: 0;
@@ -292,57 +321,41 @@ display: none;
     flex-direction: column;
     text-align: center;
   }
-  .TokyoPic{
-    width: 70%;
+
+  .TokyoPic {
+    width: 70%; /* Adjust the image size for smaller screens */
   }
-  .create{
+
+  .create {
     display: flex;
     flex-direction: column;
     font-size: 12px;
     text-align: center;
     justify-content: space-evenly;
     padding: 20px;
+  }
 }
 
-}
-
-@media screen and (max-width: 500px){
-  .all{
+/* CSS for screens up to 500px (small mobile devices) */
+@media screen and (max-width: 500px) {
+  .all {
     width: 100%;
-   flex-direction: column;
-   flex-grow: 1;
-   font-size: 2%;
-   padding-left: 30px;
-  }
-  .create{
-    border: 1px solid #000000;
-    width: 100px;
-  }
-   
-  .mylife{
-    display: none;
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: 2%; /* Adjust font size for small screens */
+    padding-left: 30px;
   }
 
+  .create {
+    border: 1px solid black;
+    width: 100px; /* Adjust project box width for small screens */
   }
 
+  .mylife {
+    display: none; /* Hide the "mylife" sections on small screens */
+  }
+}
 
-@media screen and (min-width: 769px) {
-  header {
-    padding: 20px 0;
-  }
-
-  nav li {
-    margin-left: 30px;
-  }
-  nav a {
-    font-size: 20px;
-  }
-
-  #Contact {
-    flex-direction: row;
-    text-align: center;
-  }
- }
 
 
 
